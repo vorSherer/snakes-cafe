@@ -78,7 +78,8 @@ def order_prompt():
                 print(f"\n** {amount} order of {order} have been added to your meal **\n")
             elif amount > 1:
                 print(f"\n** {amount} orders of {order} have been added to your meal **\n")
-
+            else:
+                print(f"\n** Sorry, {order} isn't one of our menu offerings. **\n")
 
 def main():
     welcome_screen()
