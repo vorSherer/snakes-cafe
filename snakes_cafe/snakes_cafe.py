@@ -67,8 +67,8 @@ def order_prompt():
     print(dedent(prompt))
 
     while True:
-        order = input()
-        if order == "quit":
+        order = input().capitalize()
+        if order == "Quit":
             break
 
         if order in menu_items:
